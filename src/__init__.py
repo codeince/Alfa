@@ -26,6 +26,7 @@ class Alfa(list[Answer]):
         self.answers = answers
         self.seed = seed_ if isinstance(seed_, int) else int(time())
         seed(self.seed)
+        self.searcher = RootSearcher()
         self.init_txt()
 
     def init_txt(self):
@@ -63,7 +64,7 @@ class Alfa(list[Answer]):
             result_list = result.split('%search%')
             result = result_list[0]
             for i in result_list[1:]:
-                result = RootSearcher().search(question)
+                result = self.searcher.search(question)
 
         return result
 
