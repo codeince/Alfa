@@ -2,6 +2,7 @@ from time import time
 from string import punctuation
 punctuation = punctuation.replace('#', '')
 from random import choice, randint, seed
+from search_services import *
 
 def capitalize(text: str) -> str:
     return text[0].upper() + text[1:]
@@ -18,7 +19,7 @@ class Answer:
     def __dict__(self) -> dict:
         return {'question': self.question, 'answer': self.answer}
     
-class Sphere(list[Answer]):
+class Alfa(list[Answer]):
     def __init__(self, lang_build: dict, answers: dict, seed_: int | None = None):
         super().__init__()
         self.lang = lang_build
@@ -47,13 +48,24 @@ class Sphere(list[Answer]):
         else:
             result = capitalize(choice(self.answers.get('default').get('answers')))
         
+        result = self._use_commands(question, result)
+
+        return Answer(question, result)
+    
+    def _use_commands(self, question: str, result: str):
         if result.find("%rand%") != -1:
             result_list = result.split('%rand%')
             result = result_list[0]
             for i in result_list[1:]:
                 result = str(randint(0, 100)).join((result, i))
 
-        return Answer(question, result)
+        if result.find("%search%") != -1:
+            result_list = result.split('%search%')
+            result = result_list[0]
+            for i in result_list[1:]:
+                result = YoutubeSearcher.search(question)
+
+        return result
 
     def to_str(self, formatting: str = 'Question: {question}\nAnswer: {answer}') -> str:
         return '\n\n'.join(answer.to_str(formatting) for answer in self)

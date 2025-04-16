@@ -11,14 +11,15 @@
             "answers": [
                 "yes",
                 "no",
-                "i'm swear yes",
-                "i'm swear no",
-                "all tells yes",
+                "i see yes",
+                "i see no",
+                "stars tell yes",
                 "more likely yes than no",
                 "more likely no than yes",
-                "it's good idea",
+                "it's good idea... google told",
                 "it can work",
-                "hope dies last"
+                "hope dies last, so I li... say truth",
+                "%search%"
             ]
         },
         "bool": {
@@ -33,9 +34,10 @@
             "answers": [
                 "yes",
                 "no",
-                "i'm swear yes",
-                "i'm swear no",
-                "all tells yes"
+                "i see yes",
+                "i see no",
+                "stars tell yes",
+                "%search%"
             ]
         },
         "place": {
@@ -48,7 +50,8 @@
                 "here",
                 "over there",
                 "everywhere",
-                "nowhere"
+                "nowhere",
+                "%search%"
             ]
         },
         "time": {
@@ -57,8 +60,8 @@
                 "when"
             ],
             "answers": [
-                "time will tell",
-                "see soon",
+                "time will tell, but time is money",
+                "see soon... most likely",
                 "right now",
                 "this minute",
                 "this hour",
@@ -75,7 +78,8 @@
                 "in %rand% months",
                 "in %rand% years",
                 "in %rand% centuries",
-                "in %rand% millennium"
+                "in %rand% millennium",
+                "%search%"
             ]
         },
         "number": {
@@ -85,11 +89,12 @@
                 "how much"
             ],
             "answers": [
-                "a lot",
-                "a few",
+                "a lot of people walked out on",
+                "a few guys made a love spell on you, all are men",
                 "none",
                 "%rand%",
-                "infinite"
+                "infinite",
+                "%search%"
             ]
         },
         "reason": {
@@ -107,7 +112,8 @@
                 "Unforeseen circumstances",
                 "Busyness",
                 "Lack of free time",
-                "Many other things to do"
+                "Many other things to do",
+                "%search%"
             ]
         }
     }

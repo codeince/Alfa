@@ -1,4 +1,4 @@
-from __init__ import Sphere
+from __init__ import Alfa
 from json import loads, dumps
 from os import name, system
 from string import digits
@@ -7,7 +7,7 @@ from os import path
 def clear(): return system('cls' if name == 'nt' else 'clear')
 def cur_dir(): return path.abspath(path.dirname(__file__))
 
-resource_pack = 'sphere'
+resource_pack = 'alfa'
 lang = 'ru'
 lang_build = loads(open(f'{cur_dir()}/resources/{resource_pack}/langs/{lang}.json', 'r', encoding='utf-8').read())
 lang_build: dict[str, str] = (lang_build if lang_build.get('lang') == 'en' else loads(dumps(lang_build, ensure_ascii=False))).get('text')
@@ -23,7 +23,7 @@ except:
 clear()
 
 
-guesser = Sphere(lang_build, answers, seed)
+guesser = Alfa(lang_build, answers, seed)
 
 
 
