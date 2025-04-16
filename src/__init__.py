@@ -2,7 +2,7 @@ from time import time
 from string import punctuation
 punctuation = punctuation.replace('#', '')
 from random import choice, randint, seed
-from search_services import *
+from search_services import RootSearcher
 
 def capitalize(text: str) -> str:
     return text[0].upper() + text[1:]
@@ -63,7 +63,7 @@ class Alfa(list[Answer]):
             result_list = result.split('%search%')
             result = result_list[0]
             for i in result_list[1:]:
-                result = YoutubeSearcher.search(question)
+                result = RootSearcher().search(question)
 
         return result
 
