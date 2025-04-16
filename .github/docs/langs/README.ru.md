@@ -4,14 +4,14 @@
 
 # УСТАНОВКА
 
-1. Скачать [репозиторий](https://github.com/CodeGameSlasher/Sphere)
+1. Скачать [репозиторий](https://github.com/codeince/Alfa)
 2. Скачать [Python](https://python.org/downloads)
-3. Скачать дополнения("pip install -r requirements.txt")
+3. Скачать дополнения(``pip install -r requirements.txt``)
 4. Запустить прогу через [Python](https://python.org/downloads)
 
-# ЧТО ТАКОЕ МОДЕЛЬ Шара
+# ЧТО ТАКОЕ МОДЕЛЬ Альфы
 
-Модель Шара - это номер "мыслей" Шара, как он будет отвечать на ваши вопросы, но вообще это семя для random
+Модель Альфы - это номер "мыслей" Альфы, как он будет отвечать на ваши вопросы, но вообще это семя для random
 
 
 # СМЕНА ЯЗЫКА
@@ -22,4 +22,4 @@
 4. Замени строчку на "lang = 'твой_язык'"
 5. Готово!
 
-Ты можешь создать свой Шар при помощи [этого гайда](https://github.com/codeince/Sphere/tree/main/.github/docs/langs/ru/CUSTOMPACK.md)
+Ты можешь создать свою Альфу при помощи [этого гайда](https://github.com/codeince/Alfa/tree/main/.github/docs/langs/ru/CUSTOMPACK.md)
