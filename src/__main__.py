@@ -30,7 +30,7 @@ guesser = Alfa(lang_build, answers, seed)
 while True:
     if len(guesser) > 0:
         guesser.init_txt()
-        print(guesser.to_str(lang_build.get('answer_formatting')), end='\n\n')
+        print(guesser.to_str(lang_build.get('answer_formatting')).replace("{connection_error}", lang_build.get("connection_error")), end='\n\n')
     question = input(lang_build.get('type_text'))
     if question.lower() in lang_build.get('stop_words'):
         exit()

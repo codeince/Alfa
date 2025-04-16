@@ -3,6 +3,7 @@
     "text": {
         "init_text": "Sphere-Fortuneteller!\nCall on 8(800)555-35-35\nPrice: oo days of slavery per question:)\n",
         "answer_formatting": "Question: {question}\nAnswer: {answer}",
+        "connection_error": "Error while sear... fortunetelling",
         "type_text": "Enter the question\n>>> ",
         "model_text": "Model: Alfa{seed}",
         "custom_model_text": "Enter your model\n>>>",

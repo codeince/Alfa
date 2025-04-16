@@ -45,7 +45,14 @@ class RootSearcher:
                 continue
 
     def search(self, q: str):
-        return self.searcher.search(q)
+        try:
+            return self.searcher.search(q)
+        except:
+            self.searcher = self._find_best_searcher()
+            try:
+                return self.searcher.search(q)
+            except:
+                return "{connection_error}"
 
 
 if __name__ == "__main__":
