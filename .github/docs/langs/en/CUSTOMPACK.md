@@ -26,6 +26,7 @@ For now this file has so pure settings but included settings are:
         {seed} - current "identity"
     5. "custom_model_text": text formatting for choosing model seed
     6. "stop_words": list of words for Alfa stopping
+    7. "connection_error": text when connection with searchers was failed
 
 # Answer file
 
