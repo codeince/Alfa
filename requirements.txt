@@ -1,2 +1,3 @@
 duckduckgo-search-api
 youtube-search
+google-search

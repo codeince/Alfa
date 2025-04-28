@@ -1,5 +1,6 @@
 from youtube_search import YoutubeSearch
 from ddg import Duckduckgo
+from googlesearch.googlesearch import GoogleSearch
 
 from random import choice
 
@@ -28,14 +29,29 @@ class DuckDuckGoSearcher(BaseSearcher):
     def search(q: str) -> str:
         search_result = Duckduckgo().search(q)
         
-        if search_result.get('success'):
-            text = choice(search_result.get('data')).get('description')
+        if search_result.get('success', False):
+            search = search_result.get('data')
+            if len(search) == 0:
+                raise Exception('No results')
+            result = choice(search)
+
+            text = result.get('description')
         else:
-            raise ConnectionError('Errored')
+            raise ConnectionError('Connection Errored')
 
         return text
+    
+class GoogleSearcher(BaseSearcher):
+        def __init__(self):
+            super().__init__("https://google.com/")
 
-SEARCHERS: list[BaseSearcher] = [DuckDuckGoSearcher, YoutubeSearcher]
+        def search(q: str) -> str:
+            search_result = GoogleSearch().search(q).results
+            text = choice(search_result).getText()
+
+            return text
+
+SEARCHERS: list[BaseSearcher] = [GoogleSearcher, DuckDuckGoSearcher, YoutubeSearcher]
 
 class RootSearcher:
     def __init__(self):
