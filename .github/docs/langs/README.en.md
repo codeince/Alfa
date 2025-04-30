@@ -15,10 +15,10 @@ Alfa Model is a number of Alfa's mind, how he will answer your questions but tha
 
 # LANGUAGE CHANGING
 
-1. Add lang.json to langs folder
-2. Add answers_lang.json to `langs/answers` folder
+1. Add `lang.json` to `langs` folder
+2. Add `answers_lang.json` to `langs/answers` folder
 3. Go to `__init__.py`
-4. Edit string to "lang = 'your_language'"
+4. Edit string to **lang = 'your_language'**
 5. All done!
 
 You can create your custom Alfa using [this guide](/.github/docs/langs/en/CUSTOMPACK.md)
