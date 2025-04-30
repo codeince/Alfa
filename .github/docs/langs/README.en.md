@@ -4,7 +4,7 @@ My old friend who helped me with idea of [Sphere](https://github.com/codeince/Sp
 
 # INSTALLATION
 
-1. Install [the repository](https://github.com/codeince/Alfa)
+1. Install [the repository](/)
 2. Download [Python](https://python.org/downloads)
 3. Install requirements(``pip install -r requirements.txt``)
 4. Start the program using [Python](https://python.org/downloads)
