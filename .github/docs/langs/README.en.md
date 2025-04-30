@@ -1,6 +1,6 @@
 # STORY OF CREATION
 
-200 years ago, I sit and my friend(yes, he helped me with [HG](https://github.com/codeince/HG)) said about [Discord](https://discord.com) bot which randomly says about something what you type. So I made this project.
+My old friend who helped me with idea of [Sphere](https://github.com/codeince/Sphere) asked me to add search engine to Sphere.
 
 # INSTALLATION
 
@@ -16,9 +16,9 @@ Alfa Model is a number of Alfa's mind, how he will answer your questions but tha
 # LANGUAGE CHANGING
 
 1. Add lang.json to langs folder
-2. Add answers_lang.json to langs/answers folder
-3. Go to __init__.py
+2. Add answers_lang.json to `langs/answers` folder
+3. Go to `__init__.py`
 4. Edit string to "lang = 'your_language'"
 5. All done!
 
-You can create your custom Alfa using [this guide](https://github.com/codeince/Alfa/tree/main/.github/docs/langs/en/CUSTOMPACK.md)
+You can create your custom Alfa using [this guide](/.github/docs/langs/en/CUSTOMPACK.md)

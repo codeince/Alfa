@@ -2,14 +2,14 @@
 
 If you need to create your own Alfa, maybe with swearing or humorer answers, this documentation was created just for you
 
-After creating of resource-pack you need to change value of variable in the **src/\_\_main\_\_.py** file in line **resource_pack = 'resource-pack name'**
+After creating of resource-pack you need to change value of variable in the `src/\_\_main\_\_.py` file in line **resource_pack = 'resource-pack name'**
 
 # Resource-pack Structure
 
 Your resource-pack must include this files:
 
-1. Language("/langs/language.json"): main Alfa actions writes right here
-2. Answer("/langs/answer_files/answers_language.json"): Alfa's dictionary for Alfa's reactions writes right here
+1. Language(`/langs/language.json`): main Alfa actions writes right here
+2. Answer(`/langs/answer_files/answers_language.json`): Alfa's dictionary for Alfa's reactions writes right here
 
 # Language File
 
