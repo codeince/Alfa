@@ -13,7 +13,7 @@ class BaseSearcher:
 
 class YoutubeSearcher(BaseSearcher):
     def __init__(self):
-        super("https://youtube.com/")
+        super().__init__("https://youtube.com/")
 
     def search(q: str) -> str:
         search_result = choice(YoutubeSearch(q, 20).to_dict())
